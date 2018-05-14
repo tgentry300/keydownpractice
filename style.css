@@ -1,0 +1,12 @@
+body{
+    background-image: url("map.jpg");
+    background-size: cover;
+}
+#box {
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    background: none;
+    left: 200px;
+    top: 200px;
+}

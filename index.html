@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="box" src="ambo.png" alt="ambulance">
+    <script>
+        let boxTop = 200;
+        let boxLeft = 200;
+        'use strict';
+
+        document.addEventListener('keydown', (event) => {
+            const keyName = event.key;
+            console.log('keydown event\n\n' + 'key: ' + keyName);
+            document.getElementById("box").style.top = boxTop + "px";
+            document.getElementById("box").style.left = boxLeft + "px";
+
+            switch (keyName) {
+                case "ArrowDown":
+                    boxTop += 10
+                    break;
+                case "ArrowUp":
+                    boxTop -= 10
+                    break;
+                case "ArrowLeft":
+                    boxLeft -= 10
+                    break;
+                case "ArrowRight":
+                    boxLeft += 10
+                    break;
+            }
+        });
+    </script>
+</body>
+
+</html>
